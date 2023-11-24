@@ -138,7 +138,8 @@ while(menu):
                             numeroglobal = "{:02}".format(numeroglobal)
 
                         numberformat = "{:" + str(numeroglobal) +"}"
-                        messegae = (int(messegae1)^e) % (numerop*numeroq)
+                        messegae = int(int(messegae1)**e) 
+                        messegae = messegae % (numerop*numeroq)
                         messegae = numberformat.format(messegae)
                         menecript.append(messegae)
                         mensaje = round(mensaje + (int(numeroglobal)/2))
@@ -178,7 +179,8 @@ while(menu):
                             numeroglobal = "{:02}".format(numeroglobal)
 
                         numberformat = "{:" + str(numeroglobal) +"}"
-                        messegae = (int(messegae1)^e) % (numerop*numeroq)
+                        messegae = int(int(messegae1)**e) 
+                        messegae = messegae % (numerop*numeroq)
                         messegae = numberformat.format(messegae)
                         menecript.append(messegae)
                         mensaje = round(mensaje + (int(numeroglobal)/2))
