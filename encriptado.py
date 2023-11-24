@@ -85,10 +85,10 @@ def decrypt(C, d, n):
         M += letra1 + letra2
     return M
 
+
 def main():
     #slowprint(f"{CLEAR}\t\t{BLUE} Bienvenido al programa de codificación y decodificación RSA{RESET}\n\n")
-    C_in = int(input(f"{GREEN}Ingrese el mensaje cifrado, en bloques de dos letras: ").replace(" ", ""))
-    C = str(C_in)
+    C = input(f"{GREEN}Ingrese el mensaje cifrado, en bloques de dos letras: ").replace(" ", "")
     e = int(input("Ingrese el valor de e: "))
     n = int(input("Ingrese el valor de n: "))
     print(CLEAR)
@@ -100,6 +100,10 @@ def main():
     #slowprint(f"\n{CLEAR}{GREEN}Llave privada d: {d}{RESET}")
     M = decrypt(C,d,n)
     print(f"\n\t{RED} El mensaje descifrado es: {M}")
+
+
+
+
 
 
 
